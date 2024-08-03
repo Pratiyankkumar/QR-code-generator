@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <title>QR code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-center items-center m-0 bg-[url('./images/back.jpg')] bg-cover bg-bottom">
+  <p class="md:text-3xl text-2xl mt-2">QR Code Generator</p>
+  <div class="relative mt-8">
+    <textarea id="js-input" placeholder="Enter the text you want to convert into QR" rows="5" class=" flex flex-wrap text-white md:w-100 md:h-52 w-60 h-96 rounded-md bg-white bg-opacity-30 backdrop-blur-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-200 p-2 resize-none"></textarea>
+
+    <button id="js-generate-button" type="button" class="text-white absolute md:right-2 right-14 bottom-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Generate
+      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="js-qrcode-container" class="mt-8 flex md:flex-row flex-col items-center pb-5">
+    
+
+  </div>
+
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
